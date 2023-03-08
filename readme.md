@@ -12,11 +12,12 @@
 ### Test Tesseract:
 1. to test install run ``` brew info tesseract ``` you can also get the install directory at this point if you need it.mine was /usr/local/Cellar/tesseract/5.3.0_1
 2. test tesseract works by opening up terminal and navigating to data folder of this project. then run ``` tesseract test.jpg myTest ``` this should generate a text file called myTest.txt with text extracted from test.jpg
-###Running project:
+### Running project:
 if this works you can now open terminal and navigate to this projects root and run ``` python3 ocr.py ```
-###What is this is doing:
-1. this will print text from each of these test images 
-###Important Links:
+### What is this is doing:
+1. the first thing this does is convert images to strings in various ways to test Tesseract's capabilities.
+2. The next thing this does is convert a pdf form to a JPG image then convert that image to Text 
+### Important Links:
 (tesseract Docs)[https://github.com/tesseract-ocr/tesseract]
 (python tesseract Docs)[https://github.com/madmaze/pytesseract]
 (python tesseract usage)[https://pypi.org/project/pytesseract/]
