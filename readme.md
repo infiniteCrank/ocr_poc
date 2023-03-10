@@ -26,6 +26,8 @@ if this works you can now open terminal and navigate to this projects root and r
 ## Set Up NLP 
 ### Steps: 
 1. download Apache Open NLP (Here)[https://opennlp.apache.org/download.html]
+2. OpenNLP script uses ```JAVA_CMD``` and ```JAVA_HOME``` variables to determine which command to use to execute Java virtual machine.
+3. OpenNLP script uses ```OPENNLP_HOME``` variable to determine the location of the binary distribution of OpenNLP. It is recommended to point this variable to the binary distribution of current OpenNLP version and update PATH variable to include ```$OPENNLP_HOME/bin```
 
 ### Important Links:
 (Apache NLP manual)[https://opennlp.apache.org/docs/2.1.1/manual/opennlp.html]
