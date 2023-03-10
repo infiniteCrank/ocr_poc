@@ -22,3 +22,10 @@ if this works you can now open terminal and navigate to this projects root and r
 (python tesseract Docs)[https://github.com/madmaze/pytesseract]
 (python tesseract usage)[https://pypi.org/project/pytesseract/]
 (pdf to image python library)[https://pdf2image.readthedocs.io/en/latest/overview.html]
+
+## Set Up NLP 
+### Steps: 
+1. download Apache Open NLP (Here)[https://opennlp.apache.org/download.html]
+
+### Important Links:
+(Apache NLP manual)[https://opennlp.apache.org/docs/2.1.1/manual/opennlp.html]
