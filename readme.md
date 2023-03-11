@@ -28,6 +28,14 @@ if this works you can now open terminal and navigate to this projects root and r
 1. download Apache Open NLP (Here)[https://opennlp.apache.org/download.html]
 2. OpenNLP script uses ```JAVA_CMD``` and ```JAVA_HOME``` variables to determine which command to use to execute Java virtual machine.
 3. OpenNLP script uses ```OPENNLP_HOME``` variable to determine the location of the binary distribution of OpenNLP. It is recommended to point this variable to the binary distribution of current OpenNLP version and update PATH variable to include ```$OPENNLP_HOME/bin```
+4. if this is done correctly you should now be able to run ```opennlp```
+5. next you will need to download the english sentence model from (Here)[https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.0/opennlp-en-ud-ewt-sentence-1.0-1.9.3.bin]. I have downloaded it and renamed it ```en-sent.bin``` and placed it in the models folder. 
+
+## What is NLP Natural Language Processor?
+1. NLP takes text and parses it to extract important information 
+2. It breaks text into sentences by putting each sentence on its own line 
+3. It then takes each sentence and breaks it apart into words and punctuation called tokens
+4. the last part it does is based off training it can tag tokens it finds and give them a specific label like Name or address 
 
 ### Important Links:
 (Apache NLP manual)[https://opennlp.apache.org/docs/2.1.1/manual/opennlp.html]
