@@ -21,6 +21,9 @@
 4. if this is done correctly you should now be able to run ```opennlp```
 5. next you will need to download the english sentence model from (Here)[https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.0/opennlp-en-ud-ewt-sentence-1.0-1.9.3.bin]. I have downloaded it and renamed it ```en-sent.bin``` and placed it in the models folder. 
 6. next you will need to download the english Token model from (Here)[https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.0/opennlp-de-ud-gsd-tokens-1.0-1.9.3.bin]. I have downloaded it and renamed it ```en-token.bin``` and placed it in the models folder. 
+7. download pre-trained name finder models (Here)[https://opennlp.sourceforge.net/models-1.5/]
+8. I have downloaded some that I think might be useful for this form and placed them in models directory
+9. eventually it would be best to train my own model for a specific standard form I am processing
 
 ## What is NLP Natural Language Processor?
 1. NLP takes text and parses it to extract important information 
@@ -32,6 +35,7 @@
 1. ```python3 aiFeeder.py```
 2. ```opennlp SentenceDetector models/en-sent.bin < text_from_JPG.txt > text_to_sentences.txt```
 3. ```opennlp TokenizerME models/en-token.bin < text_to_sentences.txt > sentences-tokenized.txt```
+4. ```opennlp TokenNameFinder models/en-ner-person.bin < sentences-tokenized.txt > found-person.txt```
 ### What is this is doing:
 
 ### Important Links:
