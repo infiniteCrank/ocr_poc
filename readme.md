@@ -12,16 +12,6 @@
 ### Test Tesseract:
 1. to test install run ``` brew info tesseract ``` you can also get the install directory at this point if you need it.mine was /usr/local/Cellar/tesseract/5.3.0_1
 2. test tesseract works by opening up terminal and navigating to data folder of this project. then run ``` tesseract test.jpg myTest ``` this should generate a text file called myTest.txt with text extracted from test.jpg
-### Running project:
-if this works you can now open terminal and navigate to this projects root and run ``` python3 ocr.py ```
-### What is this is doing:
-1. the first thing this does is convert images to strings in various ways to test Tesseract's capabilities.
-2. The next thing this does is convert a pdf form to a JPG image then convert that image to Text 
-### Important Links:
-(tesseract Docs)[https://github.com/tesseract-ocr/tesseract]
-(python tesseract Docs)[https://github.com/madmaze/pytesseract]
-(python tesseract usage)[https://pypi.org/project/pytesseract/]
-(pdf to image python library)[https://pdf2image.readthedocs.io/en/latest/overview.html]
 
 ## Set Up NLP 
 ### Steps: 
@@ -30,6 +20,7 @@ if this works you can now open terminal and navigate to this projects root and r
 3. OpenNLP script uses ```OPENNLP_HOME``` variable to determine the location of the binary distribution of OpenNLP. It is recommended to point this variable to the binary distribution of current OpenNLP version and update PATH variable to include ```$OPENNLP_HOME/bin```
 4. if this is done correctly you should now be able to run ```opennlp```
 5. next you will need to download the english sentence model from (Here)[https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.0/opennlp-en-ud-ewt-sentence-1.0-1.9.3.bin]. I have downloaded it and renamed it ```en-sent.bin``` and placed it in the models folder. 
+6. next you will need to download the english Token model from (Here)[https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.0/opennlp-de-ud-gsd-tokens-1.0-1.9.3.bin]. I have downloaded it and renamed it ```en-token.bin``` and placed it in the models folder. 
 
 ## What is NLP Natural Language Processor?
 1. NLP takes text and parses it to extract important information 
@@ -37,5 +28,15 @@ if this works you can now open terminal and navigate to this projects root and r
 3. It then takes each sentence and breaks it apart into words and punctuation called tokens
 4. the last part it does is based off training it can tag tokens it finds and give them a specific label like Name or address 
 
+### Running project:
+1. ```python3 aiFeeder.py```
+2. ```opennlp SentenceDetector models/en-sent.bin < text_from_JPG.txt > text_to_sentences.txt```
+### What is this is doing:
+
 ### Important Links:
+(tesseract Docs)[https://github.com/tesseract-ocr/tesseract]
+(python tesseract Docs)[https://github.com/madmaze/pytesseract]
+(python tesseract usage)[https://pypi.org/project/pytesseract/]
+(pdf to image python library)[https://pdf2image.readthedocs.io/en/latest/overview.html]
 (Apache NLP manual)[https://opennlp.apache.org/docs/2.1.1/manual/opennlp.html]
+
