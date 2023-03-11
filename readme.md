@@ -31,6 +31,7 @@
 ### Running project:
 1. ```python3 aiFeeder.py```
 2. ```opennlp SentenceDetector models/en-sent.bin < text_from_JPG.txt > text_to_sentences.txt```
+3. ```opennlp TokenizerME models/en-token.bin < text_to_sentences.txt > sentences-tokenized.txt```
 ### What is this is doing:
 
 ### Important Links:
