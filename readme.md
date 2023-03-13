@@ -36,6 +36,7 @@
 2. ```opennlp SentenceDetector models/en-sent.bin < text_from_JPG.txt > text_to_sentences.txt```
 3. ```opennlp TokenizerME models/en-token.bin < text_to_sentences.txt > sentences-tokenized.txt```
 4. ```opennlp TokenNameFinder models/en-ner-person.bin < sentences-tokenized.txt > found-person.txt```
+5. ```opennlp TokenNameFinder models/es-ner-person-conll02.bin < sentences-tokenized.txt > found-person-conll02.txt```
 ### What is this is doing:
 
 ### Important Links:
